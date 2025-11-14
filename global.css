@@ -2,7 +2,22 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+ 
+  body {
+    font-size: 0.95rem;
+    padding: 0;
+    margin: 0;
+  }
 
+  section {
+    padding: 10px 15px;
+  }
+ 
+  @media (max-width:768px){
+  body {
+    overflow-x: hidden; /* Soluciona el margen blanco de la derecha */
+  }
+}
 /* - - - - - - - - - - F1 - - - - - - - - - - - - - */
 .boxf1{
     width: 75vw;
@@ -88,8 +103,50 @@ nav p{
 .img_portatil{
     padding: 80px 0 50px 0;
     width: 115%;
+
+    
 }
 
+/* = = = = = = Mòbil F1= = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+    .f1{
+        display: flex;
+        
+    }
+    /* Esconder nav */
+    nav{ display:none; }
+
+    .box_opcions{
+        align-items:center;
+        justify-content: center;
+    }
+
+    .opcions_r{
+        width: 100%;
+        justify-content:flex-end; /* botón a la derecha */
+    }
+    .opcions_r p{ display:none; }   /* ocultar los textos extras */
+    .opcions_r button{
+        margin:15px 0;
+    }
+
+    .img_portatil{
+        padding: 20px 0 50px 0;
+        width: 115%;   
+
+}
+
+    .nom_programa {
+        white-space: nowrap; /* evita que el texto salte de línea */
+        display: inline-block; /* asegura que se comporte como una línea */
+    }
+    .nom_num{
+        display: none;
+    }
+
+}
 
 
 /* - - - - - - - - - - - - F2 - - - - -- - - - - - - - - */
@@ -124,6 +181,33 @@ nav p{
     height: auto;
 }
 
+
+/* = = = = = = Mòbil F2 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+    .boxf2 p{
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+.boton-appstore {
+    margin: 0.9375rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.6rem;
+    background-color: #fff;
+    color: rgb(246, 67, 96); /* Esto cambia también el color del SVG */
+    border: 0.1rem solid rgb(246, 67, 96);
+    border-radius: 1.9rem;
+    font-size: 0.9rem;
+}
+
+}
 
 
 
@@ -205,6 +289,148 @@ h3{
 
 }
 
+
+/* = = = = = = Mòbil F3 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+    br {
+        display: none;
+    }
+
+/* Contenedor principal */
+.boxf3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0.94rem;
+}
+
+/* Título principal */
+.titol_f3{
+    margin: 3.13rem 0 0 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 2.63rem;
+    line-height: 1.2;
+}
+
+/* Párrafos */
+.text_f3{
+    color: #bbb;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0.63rem 1.25rem;
+}
+
+/* Imagen principal */
+.img_f3_1{
+    margin: 0;
+    max-width: 95%;
+    width: auto;
+    height: auto;
+    
+}
+
+/* Cuadros (izq y der) apilados */
+.box_quadrats_f3{
+    display: flex;
+    flex-direction: column;  
+    gap: 1.6rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.88rem;
+    
+    
+}
+
+/* Estilos comunes a ambos cuadros */
+.quadrat_l_f3,
+.quadrat_r_f3{
+    background-color: #1d1d1f;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.38rem;
+    margin: 0 0.6rem 0 0.6rem;  
+}
+
+.quadrat_l_f3{
+    padding: 0.9rem 1.25rem 0 1.25rem;
+}
+.quadrat_r_f3{
+    padding: 0.9rem 1.25rem 2.5rem 1.25rem;
+}
+
+/* Título dentro de cuadros */
+.quadrat_l_f3 h3,
+.quadrat_r_f3 h3,
+.rectangle_f3 h3{
+    color: #eee;
+    margin: 1.25rem 0 0.63rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0 1.25rem;
+}
+
+/* Texto dentro de cuadros */
+.quadrat_l_f3 p,
+.quadrat_r_f3 p,
+.rectangle_f3 p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align:start;        
+    padding: 0 1.25rem;
+}
+
+/* Imágenes dentro de cuadros */
+.quadrat_l_f3 img{
+    width: 80%;
+    margin: 2.19rem auto 0 auto;
+}
+
+.quadrat_r_f3 img{
+    width: 5rem;
+    margin: 2.5rem auto 0.63rem auto;
+}
+
+/* Bloque rectangular inferior (texto + video) */
+.box_rectangle_f3{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #1d1d1f;
+    text-align: start;
+    margin: 1.25rem 0.63rem;
+    padding: 1.25rem;
+    border-radius: 1.38rem;
+    overflow: hidden; 
+}
+
+/* Texto del bloque rectangular */
+.rectangle_f3{
+    width: 100%;
+}
+
+/* Video reducido y centrado */
+.video_f3{
+    width: 100%;
+    margin-top: 0.94rem;
+    border-radius: 0.63rem;
+    position: relative;
+    left: 1.25rem;
+    bottom: -1.25rem;
+}
+
+
+}
+
 /* - - - - - - - - - - - F4 - - - - - - - - - - - - - - */
 .boxf4{
     align-items: center;
@@ -278,6 +504,131 @@ h3{
     font-size: 25px;
 }
 
+
+
+/* = = = = = = Mòbil F4 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+br { 
+    display: none;
+}
+
+/* Contenedor general */
+.boxf4{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0.9rem;
+}
+
+/* Cabecera */
+.cabecera_f4 h2{
+    margin: 3.1rem 0 0 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+.cabecera_f4 p{
+    color: #bbb;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0 1.3rem;
+}
+
+/* Imagen principal */
+.img_f4_tools{
+    max-width: 95%;
+    width: auto;
+    margin: 1.3rem 0;
+}
+
+/* Contenedor de todos los “tools” */
+.box_info_tools{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    width: 100%;
+    gap: 1.6rem;
+    margin: 0;
+}
+
+/* Cada bloque individual */
+.info_tools_box_indiv{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.8rem;
+    padding: 1.3rem;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Iconos */
+.icon_img{
+    width: 2.5rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Título de cada bloque */
+.info_tools_box_indiv .titulo_tools {
+    color:#ffffff;
+    font-weight:600;
+    font-size: 1.1rem;
+    margin: 0.6rem 0;
+}
+
+/* Párrafos */
+.info_tools_box_indiv p{
+    color: #bbb;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: start;
+}
+
+/* Texto azul */
+.info_tools_box_indiv .blue_text{
+    color: #0f7dd6;
+    margin-top: 0.6rem;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+/* Pie final */
+.pie_f4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.1rem 0 1.3rem 0;
+    gap: 0.6rem;
+}
+
+.pie_f4 img{
+    height: 2.5rem;
+}
+
+.plus_final{
+    color: #0f7dd6;
+    font-size: 1.1rem;
+}
+
+
+}
+
+
+
+
 /* - - - - - - - - - - - F5 - - - - - - - - - - - - - - */
 
 .boxf5{
@@ -309,6 +660,56 @@ h3{
     margin: 50px 0 45px 0;
 
 }
+
+
+
+/* = = = = = = Mòbil F5 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+br { 
+    display: none;
+}
+
+/* Contenedor general */
+.boxf5{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0.9rem;
+}
+
+/* Cabecera */
+.cabecera_f5 h2{
+    margin: 3.1rem 0 0 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 2.6rem;
+}
+
+.cabecera_f5 p{
+    color: #000000;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0 1.9rem;
+}
+
+/* Imagen principal */
+.img_f5{
+    max-width: 95%;
+    width: auto;
+    margin: 1.3rem 0;
+    box-shadow: 0.2rem 0.4rem 0.9rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+}
+
+
 
 
 
@@ -391,7 +792,7 @@ h3{
     position: absolute;
     left:-7px;
     bottom: -5px; /* Distancia entre el texto y la línea */
-    width: 475px;
+    width: 320px;
     height: 1px;
     background-color: rgb(223, 198, 90);
     border-radius: 2px;
@@ -428,6 +829,133 @@ h3{
     margin-bottom: 40px;
 
 }
+
+
+/* = = = = = = Mòbil F6 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+br {
+    display: none;
+}
+
+/* Contenedor general */
+.boxf6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+/* Rectángulo principal */
+.rectangle_f6 {
+    flex-direction: column;
+    max-width: 95%;
+    width: auto;
+    border-radius: 0.9rem;
+    padding: 1.9rem 1.9rem 0 1.9rem;
+}
+
+/* Título y texto dentro del rectángulo */
+.titulo_f6 {
+    font-size: 1.4rem;
+    margin: 1.3rem 0 0.6rem 0;
+}
+
+.texto_f6 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 1.3rem 0;
+}
+
+/* Imagen dentro del rectángulo */
+.img_rectangle_f6 {
+    width: 100%;
+    height: auto;
+    margin-top: 1.3rem;
+    padding-left: 2.5rem;
+}
+
+/* Dos cuadrados (izq y der) se apilan verticalmente */
+.box_dos_cuadradosf6 {
+    flex-direction: column;
+    margin: 1.3rem 0;
+    gap: 1.9rem;
+}
+
+/* Cuadrado izquierdo */
+.cuadradosf6_izq {
+    padding: 3.1rem;
+    border-radius: 0.9rem;
+    position: relative;
+}
+
+.cuadradosf6_izq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.9rem;
+}
+
+/* Línea horizontal debajo del título (subrayado) */
+.cuadradosf6_izq::before {
+    content: "";
+    position: absolute;
+    top: 3.4rem; 
+    bottom: 0; 
+    left: 3rem;
+    width: 0.1rem;
+    background-color: rgb(223, 198, 90);
+    border-radius: 0.1rem;
+}
+.cuadradosf6_izq h2::after {
+    content: "";
+    position: absolute;
+    left: -0.4rem;
+    bottom: -0.3rem; /* Distancia entre el texto y la línea */
+    width: 17.8rem;
+    height: 0.1rem;
+    background-color: rgb(223, 198, 90);
+    border-radius: 0.1rem;
+}
+
+/* Texto dentro del cuadrado izquierdo */
+.cuadradosf6_izq p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Cuadrado derecho */
+.cuadradosf6_der {
+    padding: 2.5rem;
+    border-radius: 0.9rem;
+    text-align: center;
+}
+
+.cuadradosf6_der img {
+    width: 80%;
+    max-width: 18.8rem;
+    height: auto;
+    margin-bottom: 1.3rem;
+}
+
+.cuadradosf6_der h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    text-align: start;
+    font-weight: 550;
+}
+
+.cuadradosf6_der p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: start;
+}
+
+}
+
+
+
 
 
 
@@ -476,6 +1004,7 @@ h3{
 
 
 /* - - - - - - - - - - - F7 - - - - - - - - - - - - - - */
+
 .f7{
     display: flex;
     flex-direction: column;          
@@ -510,10 +1039,53 @@ h3{
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
 }
 
+/* = = = = = = Mòbil F6 = = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+    .f7{
+    display: flex;
+    flex-direction: column;          
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}     
+ .f7 .contenedor1{
+    width: 100%;
+    max-width: 900px;         
+    text-align: center;
+}
+.contenedor1 h1{
+    font-size:40px  ;
+    font-weight: bold;
+}
+.contenedor1 p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+    
+}
+.f7 .contenedor2{
+    width: 100%;
+    max-width: 900px;         
+    text-align: center;
+    z-index: 2;
+}
+ 
+  .f7 video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
+}
+}
 
 /* - - - - - - - - - - - F8 - - - - - - - - - - - - - - */
+
+
 
 .Boxf8{
     display: flex;
@@ -528,6 +1100,10 @@ h3{
   font-size: 50px; 
   font-weight: 700;
   position: relative;
+}
+
+.circular1{
+display: none;
 }
 
 .img_curva{
@@ -640,7 +1216,145 @@ h3{
     height: auto;
 }
 
+/* = = = = = = Mòbil F8= = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
 
+  /* Contenedor principal */
+  
+.Boxf8{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    
+    
+} 
+.circular {
+  
+  font-size: 40px; 
+  font-weight: center;
+  height: 0;
+  
+}
+.circular1{
+    display: flex;
+  font-size: 40px; 
+  font-weight: center;  
+  height: 0px;
+}
+
+.img_curva{display: none;}
+
+
+.headerf8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 100px;
+    width: 100%;  
+    position: relative;  /* Para z-index */
+    z-index: 2; 
+}
+
+.headerf8 p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 70px;
+    
+}
+.carta-verde{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #29bd81;
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+   
+    overflow: hidden;
+    
+}  .carta-vede-titulo {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .carta-verde h3 {
+    color: white;
+    margin: 0.5rem 0;
+  }
+
+  .carta-verde p {
+    color: white;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+.carta-verde img{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    
+}
+
+.cartas_f8{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+  .New-York {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .graphique {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .New-York h3,
+  .graphique h3 {
+    color: black;
+    margin: 0.5rem 0;
+  }
+
+  .New-York p,
+  .graphique p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .New-York video {
+   width: 80%; 
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+   
+  }
+
+  .graphique img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+}
 
 /* - - - - - - - - - - - - F9 - - - - -- - - - - - - - - */
 .boxf9{
@@ -752,6 +1466,111 @@ font-size: 22px;
 .full_tech{
     color: blue;
 }
+/* = = = = = = Mòbil F9= = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+
+  /* Contenedor principal */
+  .boxf9 {
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .headerf9 h1 {
+    font-size: 1.8rem;
+  }
+
+  .headerf9 p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Contenedor de imagen + cartas */
+  .cartas-imagen {
+    flex-direction: column;   /* apiladas */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .cartas-imagen img {
+    position: static;         /* elimina desplazamiento lateral */
+    width: 100%;
+    height: auto;
+  }
+
+  /* Cartas de descripción */
+  .cartasf9 {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .over_60_effects,
+  .Effects-Browser {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .over_60_effects h3,
+  .Effects-Browser h3 {
+    font-size: 1.1rem;
+  }
+
+  .over_60_effects p,
+  .Effects-Browser p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .Effects-Browser {
+    height: auto;             /* deja que se ajuste automáticamente */
+  }
+
+  .Effects-Browser img {
+    position: relative;
+    bottom: -23px;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+
+  /* Texto de características avanzadas */
+  .Advanced-features h1 {
+    font-size: 1.8rem;
+  }
+
+  .Advanced-features p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Iconos inferiores */
+  .iconosf9 {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: center;     
+  align-items: center;         
+  gap: 1.2rem;                 
+  width: 100%;                 
+                
+}
+
+  .iconosf9 img {
+    width: 40%;
+  }
+
+  .iconosf9 p {
+    font-size: 0.9rem;
+  }
+
+  /* Texto final */
+  .full_tech {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 
 /* - - - - - - - - - - - - F10 - - - - -- - - - - - - - - */
 .boxf10{
@@ -780,7 +1599,7 @@ font-size: 22px;
 .icof10{
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 750px;
     gap: 100px;
 
     justify-content: center;
@@ -792,6 +1611,56 @@ font-size: 22px;
     font-weight: bold;
     font-size: 13px;
 }
+
+/* = = = = = = Mòbil F10= = = = = */
+/* = = = = = = = = = = = = = = */
+
+
+@media (max-width: 768px) {
+    .boxf10{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Designed_and_built h1{
+    font-size: 53px;
+    
+}
+.Designed_and_built p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300
+    
+}
+
+.iconosf10_arriba img{
+    width: 100%;
+    height: auto;
+
+}
+.icof10{
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    gap: 90px;
+    justify-content: center;
+}
+
+
+.iconosf10{
+   width: 60px;              /* tamaño fijo */
+  height: 60px;             /* igual altura y anchura */
+  object-fit: contain;      /* evita deformaciones */
+  
+}
+.p_iconosf10{
+    font-weight: bold;
+    font-size: 13px;
+}
+}
+
 
 /* - - - - - - - - - - - - F11 - - - - -- - - - - - - - - */
 .f11{
@@ -821,7 +1690,6 @@ font-size: 22px;
     font-weight: 300
 }
 .contenedor_iconos_f11{
-    border: solid black ;
     display: flex;
     flex-wrap: wrap;
     width: 870px;
@@ -837,8 +1705,55 @@ font-size: 22px;
 .contenedor_iconos_f11 h1{
     font-size: 15px;
 }
+/* = = = = = = Mòbil F11= = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+    .f11{
+    color: rgb(202, 202, 202);
+}
+.box_f11{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.Powered_by_the_latest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Powered_by_the_latest h1{
+    font-size: 40px;
 
-/* - - - - - - - - - - - - F13 - - - - -- - - - - - - - - */
+}
+.Powered_by_the_latest p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300
+}
+.contenedor_iconos_f11{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    
+}
+.iconos_f11{
+    width: 23%;   
+
+}
+.contenedor_iconos_f11 h1{
+    font-size: 15px;
+}
+}
+    
+
+/* - - - - - - - - - - - - F12 - - - - -- - - - - - - - - */
 .box_f12{
     display: flex;
     flex-direction: column;
@@ -880,7 +1795,54 @@ font-size: 22px;
     color: black;
     font-weight: bold;
 }
+/* = = = = = = Mòbil F12= = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+    .box_f12{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+.We_know_you{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.We_know_you h1{
+    font-size: 35px;
+
+}
+.We_know_you p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #555;
+}
+.iconos_f12{
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+}
+.img_iconos_f12{
+    width: 40%;   
+
+}
+.p_iconos_f12{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+}
 /* - - - - - - - - - - - - F13 - - - - -- - - - - - - - - */
+
+
 .box_f13{
     display: flex;
     flex-direction: column;
@@ -914,6 +1876,50 @@ font-size: 22px;
 
 .boton-rosa:hover {
   background-color: #ff1f6b;  /* hacer más oscuro al pasar el ratón */
+}
+
+/* = = = = = = Mòbil F13= = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+
+  .box_f13 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   /* centra verticalmente */
+    text-align: center;
+    height: 100vh;             /* ocupa toda la altura de la pantalla */
+  }
+.box_f13 img{
+    width: 40%;
+}
+.box_f13 p{
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.box_f13 h1{
+    font-size: 35px;
+    margin: 0px; 
+}
+
+
+
+.boton-rosa {
+  background-color: #ff4d88;  
+  color: white;               
+  border: none;               
+  border-radius: 25px;               
+  font-size: 16px;            
+  cursor: pointer;            /* cambia el cursor al pasar */
+  margin: 20px;
+}
+
+.boton-rosa:hover {
+  background-color: #ff1f6b;  /* hacer más oscuro al pasar el ratón */
+}
 }
 
 /* - - - - - - - - - - - - Footer - - - - -- - - - - - - - - */
@@ -951,4 +1957,43 @@ font-size: 22px;
     line-height: 1.6;
     border-top: 1px solid #e0e0e0;
     padding-top: 15px;
+}
+/* = = = = = = Mòbil Footer= = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+    
+.contenedor_footer{
+    display: flex;
+    justify-content:space-around ;
+    align-items: left;
+}
+
+.contenedor_footer h1{
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.contenedor_footer p{
+    font-size: 12px;
+    color: #555;
+
+}
+
+.Corporate_address p{
+    font-size: 10px;
+    color: #555;
+    
+}
+.Corporate_address{
+  width: 90%;             /* ocupa el 90% del ancho del contenedor padre */
+    max-width: 1225px;       /* no se expande más de 900px */
+    margin: 30px auto 0;    /* centrado horizontal con margen superior */
+    text-align: left;       /* texto alineado a la izquierda */
+    font-size: 13px;
+    color: #7d7d7d;
+    line-height: 1.6;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
 }
