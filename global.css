@@ -1,36 +1,29 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
- 
+} 
   body {
     font-size: 0.95rem;
     padding: 0;
     margin: 0;
   }
-
   section {
     padding: 10px 15px;
   }
- 
   @media (max-width:768px){
   body {
     overflow-x: hidden; /* Soluciona el margen blanco de la derecha */
   }
 }
-/* - - - - - - - - - - F1 - - - - - - - - - - - - - */
 .boxf1{
     width: 75vw;
     margin: auto;
     align-items: center;
 }
-
 nav {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-
 nav::after { 
   content: "";
   position: absolute;
@@ -47,7 +40,6 @@ nav p{
 .p1_nav{
     color: #111;
 }
-
 .box_opcions{
     position: sticky;
     top: 0;
@@ -65,13 +57,11 @@ nav p{
 .icono_pincel{
     height: 35px;
 }
-
 .nom_programa{
     font-weight: 550;
     font-size: 25px;
     padding: 0 5px 0 10px;
-    margin: 0;
-    
+    margin: 0;   
 }
 .nom_num{
     font-weight: 100;
@@ -98,31 +88,21 @@ nav p{
 .box_img_portatil{
     display: flex;
     justify-content: center;
-
 }
 .img_portatil{
     padding: 80px 0 50px 0;
-    width: 115%;
-
-    
+    width: 115%;    
 }
-
-/* = = = = = = Mòbil F1= = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
     .f1{
-        display: flex;
-        
+        display: flex;        
     }
     /* Esconder nav */
     nav{ display:none; }
-
     .box_opcions{
         align-items:center;
         justify-content: center;
     }
-
     .opcions_r{
         width: 100%;
         justify-content:flex-end; /* botón a la derecha */
@@ -131,13 +111,10 @@ nav p{
     .opcions_r button{
         margin:15px 0;
     }
-
     .img_portatil{
         padding: 20px 0 50px 0;
         width: 115%;   
-
 }
-
     .nom_programa {
         white-space: nowrap; /* evita que el texto salte de línea */
         display: inline-block; /* asegura que se comporte como una línea */
@@ -145,11 +122,7 @@ nav p{
     .nom_num{
         display: none;
     }
-
 }
-
-
-/* - - - - - - - - - - - - F2 - - - - -- - - - - - - - - */
 .boxf2{
     align-items: center;
     display: flex;
@@ -180,11 +153,6 @@ nav p{
     width: 22px;
     height: auto;
 }
-
-
-/* = = = = = = Mòbil F2 = = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
     .boxf2 p{
     font-size: 1.3rem;
@@ -193,7 +161,6 @@ nav p{
     padding: 1.5rem;
     line-height: 1.5;
 }
-
 .boton-appstore {
     margin: 0.9375rem 0 5rem 0;
     display: flex;
@@ -206,12 +173,7 @@ nav p{
     border-radius: 1.9rem;
     font-size: 0.9rem;
 }
-
 }
-
-
-
-/* - - - - - - - - - - - F3 - - - - - - - - - - - - - - */
 .boxf3{
     align-items: center;
     justify-content: center;
@@ -236,7 +198,6 @@ nav p{
     max-width: 1200px;
     width: 100%;
 }
-
 .box_quadrats_f3{
     display: flex;
     gap: 35px;
@@ -258,8 +219,7 @@ h3{
 }
 .quadrat_l_f3 img{
     width: 350px;
-    margin: 70px 0 0 75px;
-    
+    margin: 70px 0 0 75px;    
 }
 .quadrat_l_f3 p,
 .quadrat_r_f3 p,
@@ -274,7 +234,6 @@ h3{
     width: 100px;
     margin: 50px 0 20px 55px;
 }
-
 .box_rectangle_f3{
     display: flex;
     background-color: #1d1d1f;
@@ -286,19 +245,11 @@ h3{
 }
 .video_f3{
     width: 540px;
-
 }
-
-
-/* = = = = = = Mòbil F3 = = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
-
-    br {
+    br {                        /*ocultar los saltos de línea <br> en movil.*/
         display: none;
     }
-
 /* Contenedor principal */
 .boxf3{
     align-items: center;
@@ -308,7 +259,6 @@ h3{
     text-align: center;
     padding: 0 0.94rem;
 }
-
 /* Título principal */
 .titol_f3{
     margin: 3.13rem 0 0 0;
@@ -317,7 +267,6 @@ h3{
     font-size: 2.63rem;
     line-height: 1.2;
 }
-
 /* Párrafos */
 .text_f3{
     color: #bbb;
@@ -326,16 +275,13 @@ h3{
     font-weight: 300;
     padding: 0.63rem 1.25rem;
 }
-
 /* Imagen principal */
 .img_f3_1{
     margin: 0;
     max-width: 95%;
     width: auto;
-    height: auto;
-    
+    height: auto;    
 }
-
 /* Cuadros (izq y der) apilados */
 .box_quadrats_f3{
     display: flex;
@@ -343,11 +289,8 @@ h3{
     gap: 1.6rem;
     align-items: center;
     width: 100%;
-    margin-top: 1.88rem;
-    
-    
+    margin-top: 1.88rem;    
 }
-
 /* Estilos comunes a ambos cuadros */
 .quadrat_l_f3,
 .quadrat_r_f3{
@@ -358,14 +301,12 @@ h3{
     border-radius: 1.38rem;
     margin: 0 0.6rem 0 0.6rem;  
 }
-
 .quadrat_l_f3{
     padding: 0.9rem 1.25rem 0 1.25rem;
 }
 .quadrat_r_f3{
     padding: 0.9rem 1.25rem 2.5rem 1.25rem;
 }
-
 /* Título dentro de cuadros */
 .quadrat_l_f3 h3,
 .quadrat_r_f3 h3,
@@ -376,7 +317,6 @@ h3{
     font-weight: 600;
     padding: 0 1.25rem;
 }
-
 /* Texto dentro de cuadros */
 .quadrat_l_f3 p,
 .quadrat_r_f3 p,
@@ -388,18 +328,15 @@ h3{
     text-align:start;        
     padding: 0 1.25rem;
 }
-
 /* Imágenes dentro de cuadros */
 .quadrat_l_f3 img{
     width: 80%;
     margin: 2.19rem auto 0 auto;
 }
-
 .quadrat_r_f3 img{
     width: 5rem;
     margin: 2.5rem auto 0.63rem auto;
 }
-
 /* Bloque rectangular inferior (texto + video) */
 .box_rectangle_f3{
     display: flex;
@@ -412,12 +349,10 @@ h3{
     border-radius: 1.38rem;
     overflow: hidden; 
 }
-
 /* Texto del bloque rectangular */
 .rectangle_f3{
     width: 100%;
 }
-
 /* Video reducido y centrado */
 .video_f3{
     width: 100%;
@@ -427,11 +362,7 @@ h3{
     left: 1.25rem;
     bottom: -1.25rem;
 }
-
-
 }
-
-/* - - - - - - - - - - - F4 - - - - - - - - - - - - - - */
 .boxf4{
     align-items: center;
     justify-content: center;
@@ -439,7 +370,6 @@ h3{
     flex-direction: column;
     text-align: center;
 }
-
 .cabecera_f4 h2{
     margin: 60px 0 0 0;
     color: #ffffff;
@@ -468,8 +398,6 @@ h3{
 .info_tools_box_indiv{
     text-align: start;
 }
-
-
 .info_tools_box_indiv p{
     color: #bbb;
     line-height: 1.5;
@@ -490,7 +418,6 @@ h3{
     margin-top: 10px;
     font-weight: 400;
 }
-
 .pie_f4{
     display: flex;
      margin: 150px 0 10px 0;
@@ -503,18 +430,10 @@ h3{
     color: #0f7dd6;
     font-size: 25px;
 }
-
-
-
-/* = = = = = = Mòbil F4 = = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
-
-br { 
+br {                    /*ocultar los saltos de línea <br> en movil.*/
     display: none;
 }
-
 /* Contenedor general */
 .boxf4{
     align-items: center;
@@ -524,7 +443,6 @@ br {
     text-align: center;
     padding: 0 0.9rem;
 }
-
 /* Cabecera */
 .cabecera_f4 h2{
     margin: 3.1rem 0 0 0;
@@ -533,7 +451,6 @@ br {
     font-size: 2.6rem;
     line-height: 1.2;
 }
-
 .cabecera_f4 p{
     color: #bbb;
     line-height: 1.5;
@@ -541,14 +458,12 @@ br {
     font-weight: 300;
     padding: 0 1.3rem;
 }
-
 /* Imagen principal */
 .img_f4_tools{
     max-width: 95%;
     width: auto;
     margin: 1.3rem 0;
 }
-
 /* Contenedor de todos los “tools” */
 .box_info_tools{
     display: flex;
@@ -558,7 +473,6 @@ br {
     gap: 1.6rem;
     margin: 0;
 }
-
 /* Cada bloque individual */
 .info_tools_box_indiv{
     text-align: start;
@@ -570,13 +484,11 @@ br {
     width: 90%;
     box-sizing: border-box;
 }
-
 /* Iconos */
 .icon_img{
     width: 2.5rem;
     margin-bottom: 0.6rem;
 }
-
 /* Título de cada bloque */
 .info_tools_box_indiv .titulo_tools {
     color:#ffffff;
@@ -584,7 +496,6 @@ br {
     font-size: 1.1rem;
     margin: 0.6rem 0;
 }
-
 /* Párrafos */
 .info_tools_box_indiv p{
     color: #bbb;
@@ -594,7 +505,6 @@ br {
     margin: 0;
     text-align: start;
 }
-
 /* Texto azul */
 .info_tools_box_indiv .blue_text{
     color: #0f7dd6;
@@ -603,7 +513,6 @@ br {
     text-align: center;
     width: 100%;
 }
-
 /* Pie final */
 .pie_f4{
     display: flex;
@@ -613,24 +522,14 @@ br {
     margin: 3.1rem 0 1.3rem 0;
     gap: 0.6rem;
 }
-
 .pie_f4 img{
     height: 2.5rem;
 }
-
 .plus_final{
     color: #0f7dd6;
     font-size: 1.1rem;
 }
-
-
 }
-
-
-
-
-/* - - - - - - - - - - - F5 - - - - - - - - - - - - - - */
-
 .boxf5{
     align-items: center;
     justify-content: center;
@@ -638,8 +537,6 @@ br {
     flex-direction: column;
     text-align: center;
 }
-
-
 .cabecera_f5 h2{
     margin: 60px 0 0 0;
     color: #000000;
@@ -658,20 +555,11 @@ br {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     margin: 50px 0 45px 0;
-
 }
-
-
-
-/* = = = = = = Mòbil F5 = = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
-
-br { 
+br {                 /*ocultar los saltos de línea <br> en movil.*/
     display: none;
 }
-
 /* Contenedor general */
 .boxf5{
     align-items: center;
@@ -681,7 +569,6 @@ br {
     text-align: center;
     padding: 0 0.9rem;
 }
-
 /* Cabecera */
 .cabecera_f5 h2{
     margin: 3.1rem 0 0 0;
@@ -689,7 +576,6 @@ br {
     font-weight: 500;
     font-size: 2.6rem;
 }
-
 .cabecera_f5 p{
     color: #000000;
     line-height: 1.5;
@@ -697,7 +583,6 @@ br {
     font-weight: 300;
     padding: 0 1.9rem;
 }
-
 /* Imagen principal */
 .img_f5{
     max-width: 95%;
@@ -706,16 +591,7 @@ br {
     box-shadow: 0.2rem 0.4rem 0.9rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
 }
-
 }
-
-
-
-
-
-
-/* - - - - - - - - - - - F6 - - - - - - - - - - - - - - */
-
 .boxf6{
     display: flex;
     flex-direction: column;
@@ -729,30 +605,24 @@ br {
     width: 100%;
     border-radius: 20px;
     background-color: #efefef; 
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 .texto_f6{
     color: #111;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.4;
-    margin: 0 130px 0 55px;
-    
+    margin: 0 130px 0 55px;   
 }
 .img_rectangle_f6{
     height: 350px;
-    margin-top: 55px;
-    
-    
+    margin-top: 55px;    
 }
 .titulo_f6{
     font-size: 22px;
     font-weight: 600;
-    margin: 60px 0 15px 55px;
-    
+    margin: 60px 0 15px 55px;    
 }
-
 .box_dos_cuadradosf6{
     display: flex;
     margin: 50px;
@@ -765,7 +635,6 @@ br {
     background-color: #2f434a;
     border-radius: 20px;
 }
-
 /* Línea vertical decorativa a la izquierda del contenido */
 .cuadradosf6_izq::before {
     content: "";
@@ -777,14 +646,12 @@ br {
     background-color: rgb(223, 198, 90);
     border-radius: 2px;
 }
-
 .cuadradosf6_izq h2{
     position: relative; /* Necesario para el ::after */
     font-size: 65px;
     color: #ffffff;
     font-weight: 500;
-    margin: 0 0 45px 5px;
-    
+    margin: 0 0 45px 5px;    
 }
 /* Línea horizontal decorativa debajo del h2 */
 .cuadradosf6_izq h2::after {
@@ -797,15 +664,12 @@ br {
     background-color: rgb(223, 198, 90);
     border-radius: 2px;
 }
-
 .cuadradosf6_izq p {
     font-size: 19px;
     color: #ccc;
     font-weight: 200;
     line-height: 1.4;
 }
-
-
 .cuadradosf6_der{
     background-color: #efefef ;
     text-align: start;
@@ -827,19 +691,11 @@ br {
 .cuadradosf6_der img{
     width: 260px;
     margin-bottom: 40px;
-
 }
-
-
-/* = = = = = = Mòbil F6 = = = = = */
-/* = = = = = = = = = = = = = = */
-
 @media (max-width:768px){
-
-br {
+br {                /*ocultar los saltos de línea <br> en movil.*/
     display: none;
 }
-
 /* Contenedor general */
 .boxf6 {
     display: flex;
@@ -847,7 +703,6 @@ br {
     align-items: center;
     padding: 1.3rem;
 }
-
 /* Rectángulo principal */
 .rectangle_f6 {
     flex-direction: column;
@@ -856,19 +711,16 @@ br {
     border-radius: 0.9rem;
     padding: 1.9rem 1.9rem 0 1.9rem;
 }
-
 /* Título y texto dentro del rectángulo */
 .titulo_f6 {
     font-size: 1.4rem;
     margin: 1.3rem 0 0.6rem 0;
 }
-
 .texto_f6 {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 0 1.3rem 0;
 }
-
 /* Imagen dentro del rectángulo */
 .img_rectangle_f6 {
     width: 100%;
@@ -876,26 +728,22 @@ br {
     margin-top: 1.3rem;
     padding-left: 2.5rem;
 }
-
 /* Dos cuadrados (izq y der) se apilan verticalmente */
 .box_dos_cuadradosf6 {
     flex-direction: column;
     margin: 1.3rem 0;
     gap: 1.9rem;
 }
-
 /* Cuadrado izquierdo */
 .cuadradosf6_izq {
     padding: 3.1rem;
     border-radius: 0.9rem;
     position: relative;
 }
-
 .cuadradosf6_izq h2 {
     font-size: 2.5rem;
     margin-bottom: 0.9rem;
 }
-
 /* Línea horizontal debajo del título (subrayado) */
 .cuadradosf6_izq::before {
     content: "";
@@ -917,53 +765,38 @@ br {
     background-color: rgb(223, 198, 90);
     border-radius: 0.1rem;
 }
-
 /* Texto dentro del cuadrado izquierdo */
 .cuadradosf6_izq p {
     font-size: 1.2rem;
     line-height: 1.4;
 }
-
 /* Cuadrado derecho */
 .cuadradosf6_der {
     padding: 2.5rem;
     border-radius: 0.9rem;
     text-align: center;
 }
-
 .cuadradosf6_der img {
     width: 80%;
     max-width: 18.8rem;
     height: auto;
     margin-bottom: 1.3rem;
 }
-
 .cuadradosf6_der h2 {
     font-size: 1.4rem;
     margin-bottom: 0.6rem;
     text-align: start;
     font-weight: 550;
 }
-
 .cuadradosf6_der p {
     font-size: 1.2rem;
     line-height: 1.4;
     margin: 0;
     text-align: start;
 }
-
 }
-
-
-
-
-
-
-
-/* - - - - - - - - - - - F6_5 - - - - - - - - - - - - - - */
 .color_titulo{
     color: #ffc800;
-
 }
 .tabla_cuadrados{
     display: flex;
@@ -971,8 +804,7 @@ br {
     gap: 40px;
     max-width: 1200px;
     justify-content: center;
-    margin: 30px;
-    
+    margin: 30px;    
 }
 .caja_info{
     background-color: #ededed;
@@ -981,8 +813,7 @@ br {
     flex-direction: column;
     align-items: center;
     padding: 20px 20px 10px 20px;
-    width: 250px;
-    
+    width: 250px;    
 }
 .caja_info .titol_info{
     color: #000000;
@@ -999,12 +830,6 @@ br {
     width: 45px;
     margin-bottom: 20px;
 }
-
-
-
-
-/* - - - - - - - - - - - F7 - - - - - - - - - - - - - - */
-
 .f7{
     display: flex;
     flex-direction: column;          
@@ -1025,8 +850,7 @@ br {
 .contenedor1 p{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 300;
-    
+    font-weight: 300;    
 }
 .f7 .contenedor2{
     width: 100%;
@@ -1034,16 +858,11 @@ br {
     text-align: center;
     z-index: 2;
 }
- 
   .f7 video {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);    
 }
-
-/* = = = = = = Mòbil F6 = = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
     .f7{
     display: flex;
@@ -1065,58 +884,43 @@ br {
 .contenedor1 p{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 300;
-    
+    font-weight: 300;    
 }
 .f7 .contenedor2{
     width: 100%;
     max-width: 900px;         
     text-align: center;
     z-index: 2;
-}
- 
+} 
   .f7 video {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);    
 }
 }
-
-/* - - - - - - - - - - - F8 - - - - - - - - - - - - - - */
-
-
-
 .Boxf8{
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
-    position: relative; 
-    
+    position: relative;     
 } 
-.circular {
-  
+.circular { 
   font-size: 50px; 
   font-weight: 700;
   position: relative;
 }
-
 .circular1{
 display: none;
 }
-
 .img_curva{
     position: absolute;  /* Imagen por debajo del texto */
     top: -75px;
     left: 50%;
     transform: translateX(-50%);
     width: 1900px;
-    z-index: 1;  
-    
+    z-index: 1;      
 }
-
-
 .headerf8{
     display: flex;
     flex-direction: column;
@@ -1127,7 +931,6 @@ display: none;
     position: relative;  /* Para z-index */
     z-index: 2; 
 }
-
 .headerf8 p{
     font-size: 22px;
     line-height: 1.5;
@@ -1141,38 +944,28 @@ display: none;
     display: flex;
     justify-content: space-between;
     z-index: 2; 
-
 }   
-
 .carta-vede-titulo{
     margin-left: 40px;
 
 }
-
 .carta-verde p{
     color: white;
     width: 300px;
     height: 30px;
-    padding: 10px;
-    
+    padding: 10px;    
 }
-
 .carta-verde h3{
     color: white;
-    margin-left: 6px;
-    
-    
+    margin-left: 6px;   
 }
-
 .carta-verde img{
     width: 100%;
     height: 350px;
     object-fit: cover;   /*  llena el espacio recortando un poco */
     border-radius: 20px; /* mantiene bordes redondeados */
-    display: block;      /* evita espacios debajo de la imagen */
-    
+    display: block;      /* evita espacios debajo de la imagen */   
 }
-
 .cartas_f8{
     display: flex;
     justify-content: space-between;
@@ -1186,8 +979,7 @@ display: none;
     color:#565656;
     align-items: center;
   height: 300px;
-    padding: 20px;
-    
+    padding: 20px;   
    }
 .New-York h3{
     color: black;
@@ -1215,27 +1007,17 @@ display: none;
     width: 80%;
     height: auto;
 }
-
-/* = = = = = = Mòbil F8= = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
-
-  /* Contenedor principal */
-  
 .Boxf8{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
-    
-    
+    align-items: center;   
 } 
-.circular {
-  
+.circular {  
   font-size: 40px; 
   font-weight: center;
-  height: 0;
-  
+  height: 0;  
 }
 .circular1{
     display: flex;
@@ -1243,10 +1025,7 @@ display: none;
   font-weight: center;  
   height: 0px;
 }
-
 .img_curva{display: none;}
-
-
 .headerf8{
     display: flex;
     flex-direction: column;
@@ -1254,16 +1033,14 @@ display: none;
     justify-content: center;
     padding: 30px 100px;
     width: 100%;  
-    position: relative;  /* Para z-index */
+    position: relative;  /* Para z-index (que se superponga) */
     z-index: 2; 
 }
-
 .headerf8 p{
     font-size: 22px;
     line-height: 1.5;
     font-weight: 300;
-    padding-top: 70px;
-    
+    padding-top: 70px;    
 }
 .carta-verde{
    display: flex;
@@ -1272,20 +1049,16 @@ display: none;
     background: #29bd81;
     border-radius: 20px;
     width: 90%;
-    height: 600px;
-   
-    overflow: hidden;
-    
+    height: 600px;   
+    overflow: hidden;   
 }  .carta-vede-titulo {
     margin-left: 0;
     padding: 1rem;
   }
-
   .carta-verde h3 {
     color: white;
     margin: 0.5rem 0;
   }
-
   .carta-verde p {
     color: white;
     font-size: 0.95rem;
@@ -1294,21 +1067,17 @@ display: none;
     max-width: 350px;
     margin: 0 auto;
   }
-
 .carta-verde img{
     width: 100%;
     height: auto;
-    border-radius: 0;
-    
+    border-radius: 0;   
 }
-
 .cartas_f8{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
-
   .New-York {
     display: flex;
     flex-direction: column;
@@ -1319,7 +1088,6 @@ display: none;
     text-align: center;
     justify-content: center;
   }
-
   .graphique {
     background-color: #f9f9f9;
     border-radius: 15px;
@@ -1327,27 +1095,22 @@ display: none;
     padding: 1rem;
     text-align: center;
   }
-
   .New-York h3,
   .graphique h3 {
     color: black;
     margin: 0.5rem 0;
   }
-
   .New-York p,
   .graphique p {
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
   .New-York video {
    width: 80%; 
     height: auto;
     border-radius: 10px;
-    margin-top: 0.5rem;
-   
+    margin-top: 0.5rem;  
   }
-
   .graphique img {
     width: 100%;
     height: auto;
@@ -1355,8 +1118,6 @@ display: none;
     margin-top: 0.5rem;
   }
 }
-
-/* - - - - - - - - - - - - F9 - - - - -- - - - - - - - - */
 .boxf9{
     display: flex;
     flex-direction: column;
@@ -1367,7 +1128,6 @@ display: none;
 .headerf9{
     text-align: center;
 }
-
 .headerf9 h1{
     font-size: 50px;
 }
@@ -1376,20 +1136,14 @@ font-size: 22px;
     line-height: 1.5;
     font-weight: 300;
 }
-
 .cartas-imagen{
-    display: flex;
-    
-   
-   
+    display: flex;   
 }
 .cartas-imagen img {
     position: relative;
     right: 240px;
     width: 55%;
-    height: auto;
-   
-    
+    height: auto;   
 }
 .img_effects{
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -1400,14 +1154,12 @@ font-size: 22px;
     flex-direction: column;
     gap: 30px;
 }
-
 .over_60_effects{
     border-radius: 20px ;
     padding: 20px;
     width: 500px; 
     background-color: white;
     color:#565656 ;
-
 }
 .over_60_effects h3{
    color: #000000;
@@ -1420,7 +1172,6 @@ font-size: 22px;
     color: white;
     padding: 10px;
 }
-
 .Effects-Browser h3{
    color: #ffffff;
     margin: 0px;
@@ -1430,10 +1181,7 @@ font-size: 22px;
     height: auto;
     margin-top: 7px;
     position: relative;
-    left: 7px; 
-    
-   
-   
+    left: 7px;    
 }
 .Advanced-features{
     text-align: center;
@@ -1444,10 +1192,8 @@ font-size: 22px;
 .Advanced-features p{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 300
-    
+    font-weight: 300   
 }
-
 .iconosf9{
     display: flex;
     justify-content: space-between;
@@ -1455,7 +1201,6 @@ font-size: 22px;
     text-align: center;
     align-items: center;
 }
-
 .iconosf9 img{
     width: 60%;
     height: auto;
@@ -1466,67 +1211,54 @@ font-size: 22px;
 .full_tech{
     color: blue;
 }
-/* = = = = = = Mòbil F9= = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
-
   /* Contenedor principal */
   .boxf9 {
     gap: 20px;
     padding: 1rem;
   }
-
   .headerf9 h1 {
     font-size: 1.8rem;
   }
-
   .headerf9 p {
     font-size: 1rem;
     padding: 0 1rem;
   }
-
   /* Contenedor de imagen + cartas */
   .cartas-imagen {
     flex-direction: column;   /* apiladas */
     align-items: center;
     gap: 1.5rem;
   }
-
   .cartas-imagen img {
     position: static;         /* elimina desplazamiento lateral */
     width: 100%;
     height: auto;
   }
-
   /* Cartas de descripción */
   .cartasf9 {
     width: 100%;
     gap: 1rem;
     align-items: center;
   }
-
   .over_60_effects,
   .Effects-Browser {
     width: 100%;
     padding: 1rem;
     border-radius: 15px;
   }
-
   .over_60_effects h3,
   .Effects-Browser h3 {
     font-size: 1.1rem;
   }
-
   .over_60_effects p,
   .Effects-Browser p {
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
   .Effects-Browser {
     height: auto;             /* deja que se ajuste automáticamente */
   }
-
   .Effects-Browser img {
     position: relative;
     bottom: -23px;
@@ -1534,17 +1266,14 @@ font-size: 22px;
     height: auto;
     margin-top: 0.5rem;
   }
-
   /* Texto de características avanzadas */
   .Advanced-features h1 {
     font-size: 1.8rem;
   }
-
   .Advanced-features p {
     font-size: 1rem;
     padding: 0 1rem;
   }
-
   /* Iconos inferiores */
   .iconosf9 {
   display: flex;
@@ -1552,18 +1281,14 @@ font-size: 22px;
   justify-content: center;     
   align-items: center;         
   gap: 1.2rem;                 
-  width: 100%;                 
-                
+  width: 100%;                                 
 }
-
   .iconosf9 img {
     width: 40%;
   }
-
   .iconosf9 p {
     font-size: 0.9rem;
   }
-
   /* Texto final */
   .full_tech {
     font-size: 0.95rem;
@@ -1571,8 +1296,6 @@ font-size: 22px;
     margin-top: 10px;
   }
 }
-
-/* - - - - - - - - - - - - F10 - - - - -- - - - - - - - - */
 .boxf10{
     display: flex;
     flex-direction: column;
@@ -1581,20 +1304,16 @@ font-size: 22px;
     align-items: center;
 }
 .Designed_and_built h1{
-    font-size: 53px;
-    
+    font-size: 53px;   
 }
 .Designed_and_built p{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 300
-    
+    font-weight: 300    
 }
-
 .iconosf10_arriba img{
     width: 100%;
     height: auto;
-
 }
 .icof10{
     display: flex;
@@ -1611,11 +1330,6 @@ font-size: 22px;
     font-weight: bold;
     font-size: 13px;
 }
-
-/* = = = = = = Mòbil F10= = = = = */
-/* = = = = = = = = = = = = = = */
-
-
 @media (max-width: 768px) {
     .boxf10{
     display: flex;
@@ -1625,20 +1339,16 @@ font-size: 22px;
     align-items: center;
 }
 .Designed_and_built h1{
-    font-size: 53px;
-    
+    font-size: 53px;    
 }
 .Designed_and_built p{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 300
-    
+    font-weight: 300    
 }
-
 .iconosf10_arriba img{
     width: 100%;
     height: auto;
-
 }
 .icof10{
     display: flex;
@@ -1647,8 +1357,6 @@ font-size: 22px;
     gap: 90px;
     justify-content: center;
 }
-
-
 .iconosf10{
    width: 60px;              /* tamaño fijo */
   height: 60px;             /* igual altura y anchura */
@@ -1660,9 +1368,6 @@ font-size: 22px;
     font-size: 13px;
 }
 }
-
-
-/* - - - - - - - - - - - - F11 - - - - -- - - - - - - - - */
 .f11{
     color: rgb(202, 202, 202);
 }
@@ -1695,18 +1400,14 @@ font-size: 22px;
     width: 870px;
     gap: 70px;
     justify-content: center;
-    text-align: left;
-    
+    text-align: left;    
 }
 .iconos_f11{
     width: 20%;   
-
 }
 .contenedor_iconos_f11 h1{
     font-size: 15px;
 }
-/* = = = = = = Mòbil F11= = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
     .f11{
     color: rgb(202, 202, 202);
@@ -1740,26 +1441,20 @@ font-size: 22px;
     gap: 70px;
     justify-content: center;
     text-align: center;
-    width: 300px;
-    
+    width: 300px;   
 }
 .iconos_f11{
     width: 23%;   
-
 }
 .contenedor_iconos_f11 h1{
     font-size: 15px;
 }
 }
-    
-
-/* - - - - - - - - - - - - F12 - - - - -- - - - - - - - - */
 .box_f12{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    
+    gap: 50px;    
 }
 .We_know_you{
      display: flex;
@@ -1769,7 +1464,6 @@ font-size: 22px;
 }
 .We_know_you h1{
     font-size: 53px;
-
 }
 .We_know_you p{
     font-size: 22px;
@@ -1777,8 +1471,7 @@ font-size: 22px;
     font-weight: 300;
     color: #555;
 }
-.iconos_f12{
-    
+.iconos_f12{    
     display: flex;
     flex-wrap: wrap;
     width: 700px;
@@ -1788,22 +1481,18 @@ font-size: 22px;
 }
 .img_iconos_f12{
     width: 45%;   
-
 }
 .p_iconos_f12{
     font-size: 15px;
     color: black;
     font-weight: bold;
 }
-/* = = = = = = Mòbil F12= = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
     .box_f12{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    
+    gap: 50px;    
 }
 .We_know_you{
      display: flex;
@@ -1813,7 +1502,6 @@ font-size: 22px;
 }
 .We_know_you h1{
     font-size: 35px;
-
 }
 .We_know_you p{
     font-size: 22px;
@@ -1821,8 +1509,7 @@ font-size: 22px;
     font-weight: 300;
     color: #555;
 }
-.iconos_f12{
-    
+.iconos_f12{   
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -1832,7 +1519,6 @@ font-size: 22px;
 }
 .img_iconos_f12{
     width: 40%;   
-
 }
 .p_iconos_f12{
     font-size: 20px;
@@ -1840,9 +1526,6 @@ font-size: 22px;
     font-weight: bold;
 }
 }
-/* - - - - - - - - - - - - F13 - - - - -- - - - - - - - - */
-
-
 .box_f13{
     display: flex;
     flex-direction: column;
@@ -1857,13 +1540,9 @@ font-size: 22px;
     line-height: 1.5;
     font-weight: 300;
 }
-
 .box_f13 h1{
     font-size: 50px;  
 }
-
-
-
 .boton-rosa {
   background-color: #ff4d88;  
   color: white;               
@@ -1873,13 +1552,9 @@ font-size: 22px;
   font-size: 16px;            
   cursor: pointer;            /* cambia el cursor al pasar */
 }
-
 .boton-rosa:hover {
   background-color: #ff1f6b;  /* hacer más oscuro al pasar el ratón */
 }
-
-/* = = = = = = Mòbil F13= = = = = */
-/* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
 
   .box_f13 {
@@ -1899,14 +1574,10 @@ font-size: 22px;
     font-weight: 300;
     margin: 0px;
 }
-
 .box_f13 h1{
     font-size: 35px;
     margin: 0px; 
 }
-
-
-
 .boton-rosa {
   background-color: #ff4d88;  
   color: white;               
@@ -1916,74 +1587,58 @@ font-size: 22px;
   cursor: pointer;            /* cambia el cursor al pasar */
   margin: 20px;
 }
-
 .boton-rosa:hover {
   background-color: #ff1f6b;  /* hacer más oscuro al pasar el ratón */
 }
 }
-
-/* - - - - - - - - - - - - Footer - - - - -- - - - - - - - - */
-
 .contenedor_footer{
     display: flex;
     justify-content:space-around ;
     align-items: left;
 }
-
 .contenedor_footer h1{
     font-size: 12px;
     line-height: 1.5;
     font-weight: bold;
 }
-
 .contenedor_footer p{
     font-size: 12px;
     color: #555;
-
 }
-
 .Corporate_address p{
     font-size: 10px;
-    color: #555;
-    
+    color: #555;   
 }
 .Corporate_address{
-  width: 90%;             /* ocupa el 90% del ancho del contenedor padre */
-    max-width: 1225px;       /* no se expande más de 900px */
+  width: 90%;             /*  90% del ancho del contenedor padre */
+    max-width: 1225px;       /* no expande más de 900px */
     margin: 30px auto 0;    /* centrado horizontal con margen superior */
-    text-align: left;       /* texto alineado a la izquierda */
+    text-align: left;       /* alineado a la izquierda */
     font-size: 13px;
     color: #7d7d7d;
     line-height: 1.6;
     border-top: 1px solid #e0e0e0;
     padding-top: 15px;
 }
-/* = = = = = = Mòbil Footer= = = = */
-/* = = = = = = = = = = = = = = */
-@media (max-width: 768px) {
-    
+@media (max-width: 768px) {   
 .contenedor_footer{
     display: flex;
     justify-content:space-around ;
     align-items: left;
 }
-
 .contenedor_footer h1{
     font-size: 12px;
     line-height: 1.5;
     font-weight: bold;
 }
-
 .contenedor_footer p{
     font-size: 12px;
     color: #555;
-
 }
 
 .Corporate_address p{
     font-size: 10px;
     color: #555;
-
 }
 .Corporate_address{
   width: 90%;             /* ocupa el 90% del ancho del contenedor padre */
@@ -1997,4 +1652,3 @@ font-size: 22px;
     padding-top: 15px;
 }
 }
-
